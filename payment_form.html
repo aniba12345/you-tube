@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+    <form action="">
+        <p> Important fields are required by *</p>
+        <h1>Payment Form</h1>
+        <h2>Contact information</h2>
+        <p> 
+            Name : * <input type="text" name="name"required>
+           
+        </p>
+        <fieldset>
+            <legend>Gender</legend>
+        <p>  Male : *<input type="radio" name="gender" id="male"required>
+            Female :<input type="radio" name="gender" id="female"></p>
+        </fieldset>
+        <p>
+            Address: <textarea name ="address" id="address" rows = "7" cols="100">
+            </textarea>
+    
+        </p>
+        <p>
+        Email : <input type="email" name="email" id="email">
+    </p>
+    <p></p>
+     pin_code : <input type="number" name="number" id="number">
+    </p>
+    <p>
+        Card Type:
+        <select name="card Type" id=" card type">
+        <option value="">--select a card type-- </option>
+        <option value ="credit card"> credit card</option>
+        <option value ="master card"> master card</option>    
+           <option value ="ATM"> ATM</option>
+        </select>
+
+    </p>
+    <p>
+        Card Number: * <input type="number" id="card number" name="number"required
+        >
+
+    </p>
+    <p>
+        Expiration Date :* <input type="date" name="date" id="Expiration" required>
+    </p>
+    <p>
+        password:* <input type="password" required="password" id="pass" >
+        <input type="submit" value="Pay now">
+    </p>
+    </form>
+</body>
+</html>

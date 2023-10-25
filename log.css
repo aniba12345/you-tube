@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+font-family: 'Ubuntu', sans-serif;
+background-color: black;
+color: white;
+overflow: hidden;
+font-weight: 700;
+
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+#wrapper{
+    display: flex;
+    flex-direction: row;
+}
+#left{
+display: flex;
+flex: 1;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+height: 100vh;
+}
+#right{
+display: flex;
+flex: 1;
+flex-direction: column;
+}
+#sign_in{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding-bottom: 1rem;
+
+}
+#sign_in form{
+    width: 80%;
+    padding-bottom: 2rem;
+   
+}
+#sign_in.logo img{
+width:100px;
+}
+#sign_in.logo{
+    margin-bottom: 8vh;
+}
+#sign_in label{
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+#sign_in.text-input{
+    margin-bottom: 1.3rem;
+    width: 100%;
+    border-radius: 3px;
+    background-color: #181818;
+    border: 1px solid #555;
+    color: #ccc;
+    padding: 0.5rem 1rem;
+    line-height: 1.3rem;
+}
+@media ( min-width : 1200px) {
+    #left{
+        flex: 4;
+    }
+    #right{
+        flex: 4;
+    }
+}
+.secondary_btn{
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    transition: all 0.5rem;
+    text-decoration: none;
+    background-color: #f96;
+    font-weight: 500;
+}
+.secondary_btn:hover{
+    background-color: #ff7;
+    color: #181818;
+}
+#sign_in .secondary_btn , .or ,.links{
+    width: 60%;
+}
+#sign_in .links a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+#sign_in .or{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+    align-items: center;
+}
+#sign_in .or .bar{
+    flex:auto;
+    border: none;
+    height: 1px;
+    background:#aaa ;
+}
+#sign_in .or span{
+    color: #ccc;
+    padding: 0 0.8rem;
+}
+#main_footer {
+    color: #ccc;
+    text-align: center;
+    font-size: 1rem;
+    max-width: 80%;
+    color: #f96;
+    padding-top: 2rem;
+}
+#main_footer a{
+    color:#ccc;
+    text-decoration:dashed;
+}
+.secondary_button{
+    padding: 0.7rem 1rem;
+    height: 2.7rem;
+    display: block;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    color: #1b1818;
+    transition: background-color 0.5rem;
+    text-decoration: none;
+    background-color:rgb(143, 197, 218);
+    font-weight: 500;
+}
+.secondary_button:hover{
+    background-color: #ff7;
+    color: #181818;
+}
+#showcase{
+    background-image: url(images/_60a3d6d0-a62a-4119-b9f1-3332d13386d6.jpeg) ;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+}
+#showcase .showcase_text{
+    font-size: 3rem;
+    width: 100%;
+    color: rgb(21, 19, 19);
+    margin-bottom: 1.5rem;
+}
+@media(max-width:700){
+    #right{
+        display: none;
+    }
+    body{
+        overflow: auto;
+    }
+    #left{
+        justify-content: start;
+        margin-top: 2vh;
+    }
+    #sign_in .logo{
+        margin-bottom: 2vh;
+
+    }
+    #sign_in .text-input{
+        margin-bottom: 0.7rem;
+    }
+    #main_footer{
+        padding-top:1rem ;
+    }
+}

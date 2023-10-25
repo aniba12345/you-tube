@@ -1,0 +1,19 @@
+#mian{
+    height: 100%;
+    width: 100%;
+}
+#top{
+    height: 50%;
+    width: 100%;
+    background-color:red ;
+}
+#bottom{
+    height: 50%;
+    width: 100%;
+    background-color:palevioletred ;
+}
+#bone{
+    width: 25%;
+    height: 100%;
+    background-color: yellow;
+}
